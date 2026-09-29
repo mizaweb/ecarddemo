@@ -1,0 +1,40 @@
+<!doctype html><html lang="ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>JemputanKita — 3 E-Card</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="chooser" class="chooser"><h1>Pilih Design E-Card</h1><p>Tiga template dalam satu page.</p><div class="cards">
+<div class="card-item"><button data-template="1"><img src="assets/ecard1/envelope-opening.png"><b>Template 01</b><span>Adam & Hawa</span></button></div>
+<div class="card-item"><button data-template="2"><img src="assets/ecard2/opening.png"><b>Template 02</b><span>Ammar & Aisyah</span></button></div>
+<div class="card-item"><button data-template="3"><span class="t3-card-door-preview" aria-hidden="true"><img src="assets/ecard3/door-left.png" class="t3-card-door-left"><img src="assets/ecard3/door-right.png" class="t3-card-door-right"><span class="t3-card-seal">✦</span></span><b>Template 03</b><span>Ahmed &amp; Dalia</span></button></div>
+</div></div>
+<div id="app" class="app" hidden>
+<button id="backBtn" class="back">‹ Pilih design</button>
+<section id="t1" class="template template1" hidden>
+ <div class="cover"><img src="assets/ecard1/envelope-opening.png" class="full"><div class="cover-copy"><p>JEMPUTAN KE<br>MAJLIS PERKAHWINAN</p><h1>A <i>&amp;</i> W</h1></div><button class="open-hit wax" aria-label="Buka jemputan"><span></span></button></div>
+ <div class="stage" hidden><img src="assets/ecard1/arch.png" class="fixed-frame"><div class="flowers"></div><div class="scene active"></div></div>
+</section>
+<section id="t2" class="template template2" hidden>
+ <div class="cover ribbon-cover ecard2-clean-opening">
+   <img src="assets/ecard2/opening.png" class="full ecard2-opening-image" alt="Opening E-Card 2">
+   <button class="open-hit ribbon ecard2-knot-hit" aria-label="Buka jemputan">
+     <span class="ribbon-glint"></span>
+   </button>
+ </div>
+ <div class="stage" hidden><img src="assets/ecard2/frame.png" class="fixed-frame"><div class="scene active"></div></div>
+</section>
+
+<section id="t3" class="template template3" hidden>
+ <div class="cover ecard3-cover">
+   <div class="t3-door t3-door-left"><img src="assets/ecard3/door-left.png" alt=""></div>
+   <div class="t3-door t3-door-right"><img src="assets/ecard3/door-right.png" alt=""></div>
+  <div class="t3-opening-copy"><small></small><strong><i></i></strong><span></span></div>
+   <button class="open-hit ecard3-open" aria-label="Buka jemputan"></button>
+ </div>
+ <div class="stage" hidden>
+   <div class="t3-maroon-bg"></div>
+   <img src="assets/ecard3/lace-transparent.png" class="fixed-frame ecard3-frame" alt="">
+   <img src="assets/ecard3/flower-transparent.png" class="ecard3-flower" alt="">
+   <div class="scene active"></div>
+ </div>
+</section>
+<nav id="menu" class="menu" hidden><button class="contact">☎<small>Hubungi</small></button><button class="calendar">▣<small>Kalendar</small></button><button data-go="5" class="rsvp">✓<small>RSVP</small></button><button data-go="2" class="location">⌖<small>Lokasi</small></button><button class="share">↗<small>Kongsi</small></button></nav>
+<audio id="music" preload="auto" loop></audio>
+<div id="shareModal" class="modal"><div class="sharebox"><button id="closeShare">×</button><p>JEMPUTAN PERKAHWINAN</p><h2 id="shareNames"></h2><button id="waShare">WhatsApp</button><button id="copyLink">Salin Link</button></div></div>
+</div><script src="script.js"></script></body></html>
