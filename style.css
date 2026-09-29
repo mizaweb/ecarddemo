@@ -442,4 +442,46 @@
 .card-item>button{width:210px}
 .download-mp4{display:block;padding:10px 14px;border-radius:999px;background:#7b273b;color:#fff;text-decoration:none;font:600 13px 'Playfair Display',serif;letter-spacing:.04em;box-shadow:0 8px 20px #5b3d4920}
 .download-mp4:hover{filter:brightness(1.06)}
-.t3-card-door-preview{position:relative;display:block;width:100%;aspect-ratio:430/720;overflow:hidden;background:#68150d}.t3-card-door-preview>img{position:absolute;top:0;width:50.5%;height:100%;object-fit:cover;display:block}.t3-card-door-left{left:0;object-position:left center}.t3-card-door-right{right:0;object-position:right center}.t3-card-seal{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#f8dda0 0 12%,#c99a43 38%,#8c5c20 76%,#6f4316 100%);color:#6b431b;border:4px double #f5d98c;box-shadow:0 6px 14px rgba(28,5,2,.45);font-size:27px;line-height:1;z-index:3}
+.t3-card-door-preview{position:relative;display:block;width:100%;aspect-ratio:430/720;overflow:hidden;background:#68150d}.t3-card-door-preview>img{position:absolute;top:0;width:50.5%;height:100%;object-fit:cover;display:block}.t3-card-door-left{left:0;object-position:left center}.t3-card-door-right{right:0;object-position:right center}.t3-card-seal{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#f8dda0 0 12%,#c99a43 38%,#8c5c20 76%,#6f4316 100%);color:#6b431b;border:4px double #f5d98c;box-shadow:0 6px 14px rgba(28,5,2,.45);font-size:27px;line-height:1;z-index:3} /* ===== SAMAKAN SIZE 3 TEMPLATE DI CHOOSER ===== */
+
+.chooser .cards {
+  align-items: stretch;
+}
+
+.chooser .card-item {
+  width: 264px;
+}
+
+.chooser .card-item > button {
+  width: 100%;
+  height: 465px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+/* Kawasan preview semua sama */
+.chooser .card-item > button > img,
+.chooser .t3-card-door-preview {
+  width: 100%;
+  height: 375px !important;
+  min-height: 375px;
+  max-height: 375px;
+  object-fit: cover;
+  display: block;
+  border-radius: 18px;
+  flex: 0 0 375px;
+}
+
+/* Nama template */
+.chooser .card-item > button > b {
+  margin-top: 14px;
+  line-height: 20px;
+}
+
+/* Nama pasangan */
+.chooser .card-item > button > span:not(.t3-card-door-preview) {
+  margin-top: 4px;
+  line-height: 20px;
+}
